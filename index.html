@@ -16,7 +16,7 @@ title: arcticbhub - crypto jobs
 {% assign sorted-posts = site.posts | where: "categories","job" %}
 {% for post in sorted-posts %}
 <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
-	<span class="price">[{{ post.price }}]</span>
+	<span class="price">{{ post.price }}</span>
 </li>
 {% endfor %}
 </ul>
