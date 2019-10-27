@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-		<ul>
-		<li><a href="/">Home</a></li>
-		<li><a href="/about">About</a></li>
-		<li><a href="/post">Post!</a></li>
-		</ul>
-		</nav>
-		
-		<div class="container">
-    		{{ content }}
-		</div><!-- /.container -->
-		
-		<footer>
-    		<ul>
-		<li><a href="mailto:arcticb@dismail.de">email</a></li>
-		<li><a href="https://github.com/arcticbhub">github</a></li>
-		<li><a href="/log">log</a></li>
-		</ul>
-		</footer>
-	</body>
+{% include head.html %}
+	
+<body>
+{% include nav.html %}
+
+<div class="container">
+{{ content }}
+</div><!-- /.container -->
+
+{% include footer.html %}
+</body>
+	
 </html>
