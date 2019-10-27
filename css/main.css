@@ -50,3 +50,7 @@ ul.posts li {
     border: 1px solid #d0d0d0;
     margin: 5px auto;
 }
+.price {
+    float: right;
+    color: #dd4000;
+}
