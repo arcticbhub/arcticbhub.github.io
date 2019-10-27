@@ -39,6 +39,7 @@ footer {
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
+    display: inline;
 }
 
 ul.posts li {
@@ -49,6 +50,7 @@ ul.posts li {
     padding: 10px;
     border: 1px solid #d0d0d0;
     margin: 5px auto;
+    text-align: center;
 }
 .posts a {
     color: #484848;
