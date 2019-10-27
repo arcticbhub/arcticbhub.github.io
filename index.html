@@ -7,3 +7,14 @@ title: arcticbhub - crypto jobs
 	<h1>Hi there, I'm arcticb!</h1>
 	<p>I maintain <em>arcticbhub</em>, the up-to-date job list for crypto enthusiasts. <a href="/about">Read more about arcticbhub...</a></p>
 </div><!-- /.blurb -->
+
+<hr>
+
+<h2>Latest Jobs</h2>
+<ul class="posts">
+
+{% assign sorted-posts = site.posts | where: "categories","job" %}
+{% for post in sorted-posts %}
+<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
