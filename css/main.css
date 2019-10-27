@@ -50,6 +50,9 @@ ul.posts li {
     border: 1px solid #d0d0d0;
     margin: 5px auto;
 }
+.posts a {
+    color: #484848;
+}
 .price {
     float: right;
     color: #dd4000;
