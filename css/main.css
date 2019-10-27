@@ -54,5 +54,6 @@ ul.posts li {
     color: #484848;
 }
 .price {
+    display: inline-block;
     color: #dd4000;
 }
