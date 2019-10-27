@@ -1,3 +1,4 @@
 name: arcticb
 markdown: kramdown
 permalink: /:categories/:title
+timezone: GMT
