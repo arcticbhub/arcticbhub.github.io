@@ -10,12 +10,12 @@ title: arcticbhub - crypto jobs
 
 <hr>
 
-<h2>Latest Jobs</h2>
+<span class="latest">Latest job posted {{ site.date | date_to_string }}.</span>
 <ul class="posts">
 
 {% assign sorted-posts = site.posts | where: "categories","job" %}
 {% for post in sorted-posts %}
-<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
+<li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> 
 	<span class="price">[{{ post.price }}]</span>
 </li>
 {% endfor %}
