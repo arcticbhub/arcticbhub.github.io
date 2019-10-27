@@ -10,7 +10,7 @@ title: arcticbhub - crypto jobs
 
 <hr>
 
-<span class="latest">Latest job posted {{ page.date  | date_to_string }}.</span>
+<span class="latest">Latest job posted {{ site.time  | date_to_string }}.</span>
 <ul class="posts">
 
 {% assign sorted-posts = site.posts | where: "categories","job" %}
